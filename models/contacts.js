@@ -1,7 +1,8 @@
 const { Schema, model } = require("mongoose");
 const Joi = require("joi");
+const handleMongooseError = require("../helpers");
 
-// Mangoose Schema
+// MANGOOSE SCHEMA
 const contactSchema = Schema(
   {
     name: {
@@ -18,11 +19,20 @@ const contactSchema = Schema(
       type: Boolean,
       default: false,
     },
+    // connect a contact to a user owner, connect two models: contacts and users; only logged-in user can add contacts
+    owner: {
+      type: Schema.Types.ObjectId,
+      ref: "user",
+      required: true,
+    },
   },
   { versionKey: false, timestamps: true }
 );
 
-// Mangoose Model
+// handle Mongoose errors
+contactSchema.post("save", handleMongooseError);
+
+// MANGOOSE MODEL
 const Contact = model("contact", contactSchema);
 
 // JOI SCHEMA

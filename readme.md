@@ -33,6 +33,7 @@
   npm i nodemon --save-dev
   npx nodemon contacts.js
   npx nodemon server.js
+
   $ npm install --global yarn -install yarn
   $ yarn - start yarn
   $ yarn add express -install express
@@ -91,3 +92,4 @@
 (где 1 - идентификатор контакта)
 
 strapi.io для интернет магазинов (надо посмотреть)
+
