@@ -44,3 +44,50 @@
   My ToDo Pet👇
   Bi..........54
   mongodb+srv://Dmytro:Bi..........54@cluster0.jga5tum.mongodb.net/?retryWrites=true&w=majority
+
+1 URL: http://localhost:3000/api/contacts
+Получение всех контактов (GET /api/contacts):
+Метод: GET
+
+## URL: http://localhost:3000/api/contacts
+
+2
+Получение контакта по идентификатору (GET /api/contacts/:contactId):
+Метод: GET
+
+## URL: http://localhost:3000/api/contacts/1
+
+(где 1 - идентификатор контакта)
+
+3
+Добавление контакта (POST /api/contacts):
+Метод: POST
+
+## URL: http://localhost:3000/api/contacts
+
+Тело запроса (body): JSON
+{
+"text": "Новый контакт"
+}
+
+4
+Обновление контакта по идентификатору (PUT /api/contacts/:contactId):
+Метод: PUT
+
+## URL: http://localhost:3000/api/contacts/1
+
+(где 1 - идентификатор контакта)
+Тело запроса (body): JSON
+{
+"text": "Обновленный контакт"
+}
+5
+Удаление контакта по идентификатору (DELETE /api/contacts/:contactId):
+
+Метод: DELETE
+
+## URL: http://localhost:3000/api/contacts/1
+
+(где 1 - идентификатор контакта)
+
+strapi.io для интернет магазинов (надо посмотреть)
