@@ -33,26 +33,63 @@
   npm i nodemon --save-dev
   npx nodemon contacts.js
   npx nodemon server.js
-  $ npm install --global yarn -install yarn/ (запустить в самом начале для установки yarn пакета)
+
+  $ npm install --global yarn -install yarn
   $ yarn - start yarn
   $ yarn add express -install express
-  $ yarn start:dev
-  - запуск додатка
-    yarn add cors - пакет для разрешения крос доменных запрсов (запросы с одного сайта на другой)
-    1R433zjq0Ee6evVw
-    mongodb+srv://Dmytro:1R433zjq0Ee6evVw@cluster0.igrmbda.mongodb.net/test
-    yarn add jsonwebtoken
-    npm install bcryptjs
-    npm install jsonwebtoken
-    ======hw05-avatars======
-    yarn add multer
-    yarn add gravatar
-    =======hw06-email=======
-    Appi key sendgrid
+  $ yarn start:dev - запуск додатка
+  yarn add cors - пакет для разрешения крос доменных запрсов (запросы с одного сайта на другой)
+  hw3👇
+  1R433zjq0Ee6evVw
+  mongodb+srv://Dmytro:1R433zjq0Ee6evVw@cluster0.igrmbda.mongodb.net/test
+  My ToDo Pet👇
+  Bi..........54
+  mongodb+srv://Dmytro:Bi..........54@cluster0.jga5tum.mongodb.net/?retryWrites=true&w=majority
 
-    npm install --save @sendgrid/mail
-    npm install nodemailer
-    kalafi6676@minterp.com
-    from ghbgfhfn@gmail.com
-    npm install --global yarn
-    yarn add nanoid
+1 URL: http://localhost:3000/api/contacts
+Получение всех контактов (GET /api/contacts):
+Метод: GET
+
+## URL: http://localhost:3000/api/contacts
+
+2
+Получение контакта по идентификатору (GET /api/contacts/:contactId):
+Метод: GET
+
+## URL: http://localhost:3000/api/contacts/1
+
+(где 1 - идентификатор контакта)
+
+3
+Добавление контакта (POST /api/contacts):
+Метод: POST
+
+## URL: http://localhost:3000/api/contacts
+
+Тело запроса (body): JSON
+{
+"text": "Новый контакт"
+}
+
+4
+Обновление контакта по идентификатору (PUT /api/contacts/:contactId):
+Метод: PUT
+
+## URL: http://localhost:3000/api/contacts/1
+
+(где 1 - идентификатор контакта)
+Тело запроса (body): JSON
+{
+"text": "Обновленный контакт"
+}
+5
+Удаление контакта по идентификатору (DELETE /api/contacts/:contactId):
+
+Метод: DELETE
+
+## URL: http://localhost:3000/api/contacts/1
+
+(где 1 - идентификатор контакта)
+
+strapi.io для интернет магазинов (надо посмотреть)
+
