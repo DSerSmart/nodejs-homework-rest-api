@@ -10,11 +10,7 @@ const addContact = async (req, res, next) => {
       throw error;
     }
 
-    const { _id } = req.user;
-
-    // create a new contact and ASSIGN an owner with ID to the contact, who created this contact
-    const newContact = await Contact.create({ ...req.body, owner: _id });
-    
+    const newContact = await Contact.create(req.body);
     res.status(201).json({
       status: "success",
       code: 201,

@@ -1,9 +1,2 @@
 node_modules/
-<<<<<<< HEAD
-
-config.js
-=======
 .env
-.idea
-.vscode
->>>>>>> 77a2bc26a640455eb1dd6c6d1f8b03b988a8bde3
