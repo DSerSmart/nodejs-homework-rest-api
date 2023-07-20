@@ -1,3 +1,4 @@
-const controllers = require("./contacts");
+const contactsController = require("./contacts");
+const todoController = require("./todos");
 
-module.exports = { controllers };
+module.exports = { contactsController, todoController };
